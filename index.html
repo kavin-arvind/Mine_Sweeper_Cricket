@@ -1,0 +1,35 @@
+<html>
+    <link rel="stylesheet" href="cs104 style.css">
+    <script src="cs104 script.js"></script>
+    <head>
+        <title>Minesweeper Cricket</title>
+    </head>
+    <body>
+
+        <h1>Minesweeper Cricket</h1>
+        <button type="button" onclick="grid_no(6)" id="six">6 x 6</button>
+        <button type="button" onclick="grid_no(7)" id="seven">7 x 7</button><br>
+        <form>
+            <label for="num-players">Number of Players:</label>
+            <input type="number" id="num-players" min="1" max="7" value="1">
+        </form>
+        
+        <button id="start-btn" onclick="game_start()">Start Game</button>
+        
+        <p id="started"></p>
+        <p id="turn"></p>
+        <div style="justify-content: space-between;">
+            <div class="grid-container" id="griding" style="opacity: 0.5;">   
+            </div>
+            <div id="score"></div>
+        </div>
+        <div class="out-animation" id="out-animation">OUT!!</div>
+        <p id="final-score" style="font-size: 30px;font-weight: bold;background-color: aqua;margin: auto;"></p>
+        <table id="score-table" style="width: auto; margin: auto;background-color: aqua;">
+
+        </table>
+        <p id="final-winner" style="font-size: 30px;font-weight: bold;background-color: aqua;margin: auto;"></p>
+        <p id="output" ></p>
+        <p><button onclick="window.close()">Close window</button></p>
+    </body>
+</html>
